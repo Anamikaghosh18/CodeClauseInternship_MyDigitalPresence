@@ -101,6 +101,59 @@ button:hover {
     background-color: #525253;
 }
 
+.about-me {
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.skill-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skill-input input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 5px solid #0c0505;
+    border-radius: 5px;
+    width: calc(100% - 160px);
+}
+
+.skill-input button {
+    padding: 10px 20px;
+    background-color: #09070a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-input button:hover {
+    background-color: #474849;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-box {
+    background-color: #e03b11;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+}
 #projects {
     padding: 2em;
 }
@@ -108,8 +161,8 @@ button:hover {
 .project {
     display: flex;
     margin-bottom: 2em;
-    border: 1px solid #fafafa;
-    box-shadow: 0 6px 10px rgba(126, 119, 119, 0.1);
+    border: 1px solid #f4f4f8;
+    box-shadow:5px 5px 6px 10px rgba(15, 1, 1, 0.1);
 }
 
 .project-image {
@@ -141,7 +194,7 @@ button:hover {
 .project-links a {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: #2a76e9;
+    background-color: #081b70;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -149,7 +202,7 @@ button:hover {
 }
 
 .project-links a:hover {
-    background-color: #5b5c5e;
+    background-color: #8d8d8f;
 }
 
 .social{
@@ -171,59 +224,90 @@ button:hover {
     font-size: 20px;
     height: 50px;
 }
-.form-container {
-    border: 2px solid #ccc;
+
+
+.contact {
+    color : white;
+    background-color: #0a0a0a;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-top: 2em;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f9f9f9;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
 }
 
-#contact-form {
+.contactform {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.form-group {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 1em;
+label {
+    margin-bottom: 5px;
+    color: hsl(0, 25%, 90%);
 }
 
-.form-group label {
-    flex-basis: 30%;
-    text-align: right;
-    margin-right: 1em;
-}
-
-.form-group input,
-.form-group textarea {
-    flex-basis: 60%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
+input[type="text"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
     border-radius: 5px;
+    width: calc(100% - 22px);
 }
 
-.form-group .radio-buttons {
-    flex-basis: 60%;
-    display: flex;
-    justify-content: space-around;
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #60e78d;
+    box-shadow: 0 0 5px rgba(96, 241, 132, 0.5);
 }
 
-#contact-form button {
-    margin-top: 1em;
-    padding: 0.5em 1em;
-    background-color: #007BFF;
+.radio-button {
+    margin-bottom: 15px;
 }
 
+.radio-button label {
+    margin-right: 10px;
+    color: #fffefe;
+}
 
+#budget-container {
+    margin-bottom: 15px;
+}
 
+button {
+    padding: 10px;
+    background-color: #3e413e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+button:hover {
+    background-color: #efaff1;
+}
 
-
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
