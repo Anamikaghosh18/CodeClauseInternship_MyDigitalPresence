@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Presence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="script.js"></script>
+      </head>
+
+<body>
+
+        <nav id="nav" class="nav">
+            <div class ="logo">AG</div>
+            <div class ="items">
+            <ul>
+                <li><a href="#Home"></a>Home</li>
+                <li><a href="#About"></a>About</li>
+                <li><a href="#Projects"></a>Projects</li>
+                <li><a href="#Contact"></a>Contact</li>
+            </ul>
+            </div>
+        </nav>
+
+
+    <!-- Starting for the Home section -->
+    <section id="home" class="welcome">
+      <div class ="image">
+        <img src="https://www.google.com/imgres?q=software%20developer%20developer%20icon&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F6008%2F6008790.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsoftware-developer_6008790&docid=I3InyIQwT8rOQM&tbnid=0qSXqAV2ak0rNM&vet=12ahUKEwiE49-ejLSGAxWTT2wGHU_HAjEQM3oECDIQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwiE49-ejLSGAxWTT2wGHU_HAjEQM3oECDIQAA" alt = "developer">
+      </div>
+      <div class="home">
+        <h1>Hello ! My name is Anamika<br>I am a software developer</h1><br>
+            <p>I am passionate about creating innovative solutions and enhancing user experiences. With a background in various programming languages and technologies.</p>
+           <button onclick="visitGitHub()">My GitHub</button>
+           <button onclick="location.href='C:\Users\ganam\OneDrive\Desktop\MyDigitalPresence\Images\phy 110.pdf'">Download CV</button>
+        </div>
+    </section>
+    <!-- end of home section -->
+
+
+    <!-- start of about section -->
+    <section class ="aboutme">
+        <div class = "about">
+
+        </div>
+        <div class ="tech">
+
+        </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- starting of project section -->
+    <p id = "project">Projects</p>
+    <section id="projects">
+
+      <!-- project-1  image -->
+        <div class="project">
+            <div class="project-image">
+                <img src="project1-image-url" alt="Project-1 Image">
+          </div>
+      <!-- project-1 details -->
+            <div class="project-details">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+                <div class="project-links">
+                    <a href="project1-demo-link" target="_blank">Live Demo</a>
+                    <a href="project1-link" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+        <!-- project-2 image -->
+        <div class="project">
+            <div class="project-image">
+                <img src="project2-image-url" alt="Project-2 Image">
+            </div>
+            <!-- project-2 details -->
+            <div class="project-details">
+                <h3>Project Title 2</h3>
+                <p>Description of Project 2</p>
+                <div class="project-links">
+                    <a href="project2-demo-link" target="_blank">Live Demo</a>
+                    <a href="project2-link" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- end of project section -->
+
+    <!-- start of contact section -->
+    <div class="social">
+    <p class ="connect">Connect With Me</p>
+    <button class="social-button" onclick="visitGmail()">Gmail</button>
+    <button class="social-button" onclick="visitLinkedIn()">LinkedIn</button>
+    <!--<button class="social-button" onclick="visitFacebook()">Facebook</button>-->
+    <button class="social-button" onclick="visitTwitter()">Twitter</button>
+    </div>
+   <!-- Form for collaboration -->
+    <div class ="contact">
+    <p class ="contactform">For Collaboration- Feel free to reach out to me </p>
+    <h2>Contact Form</h2>
+    <form id ="contact-form" action ="https://formsree.io/g.anamika0101@gmail.com" method ="POST">
+        <label for ="name">Name</label>
+        <input type ="text" id ="name" name ="name" required>
+        <label for ="email">Email</label>
+        <input type ="text" id ="email" name ="email" required>
+        <div class ="radio-button">
+            <label for ="purposeof contact">Puopose of Contact:  </label>
+        <label><input type ="radio" name ="purpose" value ="hiring" required onclick="toggleBudget(true)">Hiring</label>
+        <label><input type ="radio" name ="purpose" value ="assistance" required onclick="toggleBudget(false)">Need Assistance</label>
+        <label><input type ="radio" name ="purpose" value ="freelance" required onclick="toggleBudget(true)">Freelance</label>
+        <label><input type ="radio" name ="purpose" value ="other" required onclick="toggleBudget(false)">Other</label>
+        </div>
+        <div id ="budget-container" style ="display: none;">
+            <label for ="budget">Budget Range:</label>
+            <input type ="text" name ="budget" id ="budget">
+
+        </div>
+        <label for="message">Message:</label>
+        <textarea id ="message" name ="message" rows ="10" required></textarea>
+        <button type ="submit">Submit</button>
+        
+         </form>
+        
+    
+   
+    </section>
+    <!-- end of contact section -->
+
+</body>
+<footer>
+    <div class="footer">
+        
+    </div>
+</footer>
+
+</html>
