@@ -57,9 +57,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color:#fff;
+    background-color:#df6cc6e8;
     border-radius: 5px;
-    color:#363232;
+    color:#fafafa;
     animation: fadeIn 2s ease-out ;
     margin: 4rem;
     border: 1px solid #fafafa;
@@ -227,8 +227,10 @@ button:hover {
 
 
 .contact {
+    margin: 0 auto; /* Center the contact form horizontally */
+    max-width: 600px; /* Set maximum width for the contact form */
     color : white;
-    background-color: #0a0a0a;
+    background-color: #3133c0cc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -288,7 +290,7 @@ textarea:focus {
 
 button {
     padding: 10px;
-    background-color: #3e413e;
+    background-color: #2c2c2ec5;
     border: none;
     border-radius: 5px;
     color: white;
@@ -298,7 +300,7 @@ button {
 }
 
 button:hover {
-    background-color: #efaff1;
+    background-color: #0f0e0f;
 }
 
 @keyframes fadeIn {
@@ -310,4 +312,19 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.contact form {
+    margin-bottom: 60px;
+} /* Add space below the contact form */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
