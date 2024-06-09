@@ -148,7 +148,23 @@
     </section>
     
     <!-- end of project section -->
+<!-- Bot symbol -->
+  <div id="bot-symbol" class="bot-symbol" onclick="toggleChatbot()">?</div>
 
+  <!-- Chatbot pop-up -->
+  <div id="chatbot-popup" class="chatbot-popup">
+    <div class="chatbot-header">
+      <span class="close-btn" onclick="toggleChatbot()">&times;</span>
+      <h2>Portfolio Chatbot</h2>
+    </div>
+    <div class="chatbot-content">
+      <!-- Chatbot conversation will be displayed here -->
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Type your question...">
+      <button onclick="sendQuestion()">Send</button>
+    </div>
+  </div>
     
      <!-- start of contact section -->
      <div class="social">
